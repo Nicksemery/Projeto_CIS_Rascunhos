@@ -18,48 +18,47 @@ erDiagram
     
     
     Psicologo {
-        id_psicologo PK
-        id_Coordenacao FK
-        Nome 
-        Matricula
-        Ativo
+        string id_psicologo PK
+        string id_Coordenacao FK
+        string Nome 
+        string Matricula
+        bool Ativo
     }
 
     Coordenacao {
-        id_coordenacao PK
-        Nome
-        Matricula
-        Cargo
-        Ativo
+        string id_coordenacao PK
+        string Nome
+        string Matricula
+        string Cargo
+        bool Ativo
     }
 
     Sessao {
-        id_sessao PK
-        id_Coordenacao FK
-        id_Psicologo FK
-        id_Usuario FK
-        Horario_Confirmado
-        Ativo
+        string id_sessao PK
+        string id_Coordenacao FK
+        string id_Psicologo FK
+        string id_Usuario FK
+        bool Horario_Confirmado
+        bool Ativo
     }
 
     Paciente {
-        id_usuario PK
-        id_Coordenacao FK
-        id_Usuario FK
-        Nome
-        Telefone
-        Disponibilidade_Data
-        Disponibilidade_Horario
-        Data_Registro
+        string id_usuario PK
+        string id_Coordenacao FK
+        string id_Usuario FK
+        string Nome
+        string Telefone
+        date Disponibilidade_Data
+        time Disponibilidade_Horario
+        datetime Data_Registro
     }
 
     Usuario {
-        id_usuario PK
-        Login
-        Senha
-        Permissao
+        string id_usuario PK
+        string Login
+        string Senha
+        string Permissao
     }
-
 ```
 
 # Dashboard Psicologia
