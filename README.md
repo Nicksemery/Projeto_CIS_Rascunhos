@@ -18,46 +18,46 @@ erDiagram
     
     
     Psicologo {
-        PK id_psicologo
-        FK id_Coordenacao
-        VARCHAR Nome
-        VARCHAR Matricula
-        BOOLEAN Ativo
+        id_psicologo PK
+        id_Coordenacao FK
+        Nome 
+        Matricula
+        Ativo
     }
 
     Coordenacao {
-        PK id_coordenacao
-        VARCHAR Nome
-        VARCHAR Matricula
-        VARCHAR Cargo
-        BOOLEAN Ativo
+        id_coordenacao PK
+        Nome
+        Matricula
+        Cargo
+        Ativo
     }
 
     Sessao {
-        PK id_sessao
-        FK id_Coordenacao
-        FK id_Psicologo
-        FK id_Usuario
-        BOOLEAN Horario_Confirmado
-        BOOLEAN Ativo
+        id_sessao PK
+        id_Coordenacao FK
+        id_Psicologo FK
+        id_Usuario FK
+        Horario_Confirmado
+        Ativo
     }
 
     Paciente {
-        PK id_usuario
-        FK id_Coordenacao
-        FK id_Usuario
-        VARCHAR Nome
-        VARCHAR Telefone
-        DATE Disponibilidade_Data
-        TIME Disponibilidade_Horario
-        DATETIME Data_Registro
+        id_usuario PK
+        id_Coordenacao FK
+        id_Usuario FK
+        Nome
+        Telefone
+        Disponibilidade_Data
+        Disponibilidade_Horario
+        Data_Registro
     }
 
     Usuario {
-        PK id_paciente
-        VARCHAR Login
-        VARCHAR Senha
-        VARCHAR Permissao
+        id_usuario PK
+        Login
+        Senha
+        Permissao
     }
 ```
 
