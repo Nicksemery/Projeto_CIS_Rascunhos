@@ -2,20 +2,20 @@
 
 ```mermaid
 erDiagram
-    Psicologo ||--o{ Coordenacao : "(1,1) para (0,n)"
-    Coordenacao ||--|| Psicologo : "(1,1) para (1,1)"
+    Psicologo ||--o{ Coordenacao : "(1,1)"
+    Coordenacao ||--|| Psicologo : "(1,1)"
 
-    Psicologo ||--o{ Sessao : "(1,1) para (0,n)"
-    Coordenacao ||--|| Sessao : "(1,1) para (0,n)"
+    Psicologo ||--o{ Sessao : "(1,1)"
+    Coordenacao ||--|| Sessao : "(1,1)"
 
-    Sessao ||--|| Coordenacao : "(0,n) para (1,1)"
-    Sessao ||--|| Psicologo : "(0,n) para (1,1)"
-    Sessao ||--|| Paciente : "(1,1) para (0,n)"
+    Sessao ||--|| Coordenacao : "(0,n)"
+    Sessao ||--|| Psicologo : "(0,n)"
+    Sessao ||--|| Paciente : "(1,1)"
     
-    Coordenacao ||--|| Paciente : "(1,1) para (0,n)"
+    Coordenacao ||--|| Paciente : "(1,1)"
     
-    Usuario ||--o{ Paciente : "(1,1) para (0,n)"
-    Usuario ||--o{ Psicologo : "(1,1) para (1,1)"
+    Usuario ||--o{ Paciente : "(1,1)"
+    Usuario ||--o{ Psicologo : "(1,1)"
     Usuario ||--o{ Coordenacao : "(1,1)"
     
     
