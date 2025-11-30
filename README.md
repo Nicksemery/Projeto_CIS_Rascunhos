@@ -15,6 +15,8 @@ erDiagram
     Coordenacao ||--|| Paciente : "(1,1) para (0,n)"
     
     Usuario ||--o{ Paciente : "(1,1) para (0,n)"
+    Usuario ||--o{ Psicologo : "(1,1)"
+    Usuario ||--o{ Coordenacao : "(1,1)
     
     
     Psicologo {
