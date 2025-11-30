@@ -82,17 +82,17 @@ Frontend:
  
 Backend:
 - `/src` : codigo fonte
-- `/controller`: controllers de serviço
-- `/domain`: `/dtos` : todos os Dtos do sistema, dividido em request e response
-- `/domain`: `/dtos` :`/request`: esquemas de dtos de ponto de pedido http (entrada de dados)
-- `/domain`: `/dtos` :`/response`: esquemas de dtos de ponto de pedido http (saida de dados)
-- `/domain`: `/entity` : todos os esquemas de entidades
-- `/infra` : infraestrutura do sistema
-- `/infra`: `/cofig` : configurações e segurança
-- `/infra` : `/mapper` : logica de encapsulamento e transformação de dto(request) para entidade e entidade para dto (response)
-- `/infra` : `/repository` : repositorios das entidades e ponto de acesso ao banco
-- `/infra` : `/service` : camada de interface e implementação das interfaces para encapsular os metodos dos controllers
-- `/infra` : `/validate` : camada de validação para o fluxo de informação
+    - `/controller`: controllers de serviço
+    - `/domain`: `/dtos` : todos os Dtos do sistema, dividido em request e response
+    - `/domain`: `/dtos` :`/request`: esquemas de dtos de ponto de pedido http (entrada de dados)
+    - `/domain`: `/dtos` :`/response`: esquemas de dtos de ponto de pedido http (saida de dados)
+    - `/domain`: `/entity` : todos os esquemas de entidades
+    - `/infra` : infraestrutura do sistema
+    - `/infra`: `/cofig` : configurações e segurança
+    - `/infra` : `/mapper` : logica de encapsulamento e transformação de dto(request) para entidade e entidade para dto (response)
+    - `/infra` : `/repository` : repositorios das entidades e ponto de acesso ao banco
+    - `/infra` : `/service` : camada de interface e implementação das interfaces para encapsular os metodos dos controllers
+    - `/infra` : `/validate` : camada de validação para o fluxo de informação
 
 ## Features and Future
 
