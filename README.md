@@ -63,11 +63,51 @@ erDiagram
     }
 ```
 
-# Dashboard Psicologia
+# C+S Psicologia
 
-**Description**: Sistema web interativo de gestão para psicólogos.
+## 💡 Visão Geral do Projeto
 
-**Tech Stack**: Frontend: React + Javascript + Tailwind + Vite | Backend: Java + Spring boot | Auth: Spring Security | Banco : MySql
+### Contexto
+Projeto de aplicação web voltado para os alunos de Psicologia da faculdade que estagiam dentro do campus e que ainda utilizam métodos lentos e arcaicos de controle de consulta.
+
+* Ao invés de utilizarem PDFs com extensas listas com informações perdíveis e apagadas, criaremos um sistema de cadastro e disponibilidade.
+* O sistema visa permitir que os estagiários selecionem os pacientes com mais eficiência.
+* O(A) Coordenador(a) poderá manter um controle mais fácil e acessível dos futuros profissionais e seus pacientes, gerando relatórios mais rápidos.
+
+### 🛠️ Ferramentas Usadas
+
+| Camada | Tecnologia |
+| :--- | :--- |
+| **Frontend** | React + JavaScript + Tailwind + Vite |
+| **Backend** | Java + SpringBoot |
+| **Banco de Dados** | MySQL |
+| **Autenticação** | Spring Security (a ser implementado) |
+
+---
+
+## 🎯 Objetivos
+
+* Agilizar e aprimorar os processos de agendamento entre pacientes e psicólogos.
+* Criar uma ferramenta prática para o dia-a-dia dos estagiários.
+* Facilitar a visualização e criação de relatórios para os gestores.
+
+---
+
+## 📋 Especificações (Escopo)
+
+O sistema deve incluir as seguintes funcionalidades:
+
+* **Listagem de Pacientes:** Visualização da lista de pacientes em formato de cartelas (cards).
+* **Disponibilidade:** Visualização da disponibilidade de horários também em cartelas.
+* **Retorno de Pacientes Cadastrados:** Funcionalidade para buscar pacientes já registrados.
+* **Métricas:** Exibição da quantidade de pessoas atendidas.
+* **Relatórios:** Controle e facilitação na geração de relatórios para a coordenação.
+
+---
+
+## ⚠️ Problemas Atuais (Resolvidos pelo Projeto)
+
+* A falta de comunicação entre os sistemas utilizado por eles.
 
 ## Directory Structure
 Frontend:
