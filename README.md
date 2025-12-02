@@ -107,18 +107,29 @@ Backend:
 8. **Design Responsivo**: Layout de 3 painéis adaptável para mobile, tablet e desktop
 
 ### Limitações Conhecidas
-- Dados são mock/estáticos (não há persistência real)
 - Não há autenticação de usuário
-- Disponibilidade não afeta calendário real
 
 ## Database Schema
-**Type**: N/A (usando dados mock)
 
 ## Deno Functions
 N/A
 
 ## API Endpoints
-N/A (aplicação frontend pura com dados mock)
+- `/dtoRequests`: entrada de dados json
+      - `/coordenacao`: {
+                          "nome": "String",
+                          "email": "String",
+                          "matricula": "String"
+                        }
+      - `/paciente`: {
+                      "nome": "String",
+                      "telefone": "String",
+                      "idCoordenacao": 0, -->requer valido
+                      "disponibilidadeData": "SEGUNDA", -->tipo enum
+                      "disponibilidadeHorario": "H0800" -->ex h 08:00 
+                    }
+
+- `/dtoResponses`: web view
 
 ## Improvement Opportunities
 
