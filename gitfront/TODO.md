@@ -1,0 +1,4 @@
+- [x] Update main div className in Pacientes.tsx to remove padding
+- [x] Update inner div className in Pacientes.tsx to match Estagiarios
+- [ ] Update h1 className in Pacientes.tsx to match Estagiarios
+- [ ] Update p className in Pacientes.tsx to match Estagiarios
