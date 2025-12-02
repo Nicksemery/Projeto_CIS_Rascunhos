@@ -114,22 +114,58 @@ Backend:
 ## Deno Functions
 N/A
 
+
 ## API Endpoints
 - `/dtoRequests`: entrada de dados json
-      - `/coordenacao`: {
-                          "nome": "String",
+    - `/coordenacao`:{"nome": "String",
                           "email": "String",
-                          "matricula": "String"
-                        }
-      - `/paciente`: {
+                          "matricula": "String"}
+    - `/paciente`:{
                       "nome": "String",
                       "telefone": "String",
                       "idCoordenacao": 0, -->requer valido
                       "disponibilidadeData": "SEGUNDA", -->tipo enum
-                      "disponibilidadeHorario": "H0800" -->ex h 08:00 
-                    }
+                      "disponibilidadeHorario": "H0800" -->ex h 08:00 }
+    - `/psicologo`:{
+  "nome": "string",
+  "matricula": "string",
+  "idCoordenacao": 0 --> requer valido
+}
+    - `/sessao`:{
+  "idPsicologo": 0, --> requer valido
+  "idPaciente":0, --> requer valido
+  "idCoordenacao": 0, --> requer valido
+  "dataHoraAgendada": "2025-12-02T07:02:21.376Z" --> hora de entrada de informação
+}
 
 - `/dtoResponses`: web view
+    - `/coordenacao`:{
+  "id": 0,
+  "nome": "string",
+  "matricula": "string",
+  "email": "string"
+}
+    - `/paciente`:{
+  "id": 0,
+  "idCoordenacao": 0,
+  "nome": "string",
+  "telefone": "string"
+}
+    - `/psicologo`:{
+  "id": 0,
+  "idCoordenacao": 0,
+  "nome": "string",
+  "matricula": "string"
+}
+    - `/sessao`:{
+  "id": 0,
+  "idPaciente": 0,
+  "idPsicologo": 0,
+  "idCoordenacao": 0,
+  "dataHora": "2025-12-02T07:05:20.772Z",
+  "status": "PENDENTE_APROVACAO",
+  "dataAprovacao": "2025-12-02T07:05:20.772Z"
+}
 
 ## Improvement Opportunities
 
